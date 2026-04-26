@@ -87,7 +87,9 @@ while True:
             product["last_alert"] = now
 
         else:
-            print(f"{product['name']} OOS")
+            send_alert(f"⚡ {product['name']} STILL AVAILABLE!\n{product['url']}")
+            product["last_alert"] = now
+            #print(f"{product['name']} OOS")
 
         product["last_stock"] = stock
 
