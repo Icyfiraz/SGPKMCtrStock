@@ -4,8 +4,8 @@ import re
 import time
 import os
 
-BOT_TOKEN = os.getenv("8580646424:AAHjfCvSlDz4LJzbg0lMGR8M8iDbxH-bfiE")
-CHAT_ID = os.getenv("1953284530")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
 
 PRODUCTS = [
     {
