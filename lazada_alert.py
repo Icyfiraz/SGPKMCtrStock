@@ -42,8 +42,11 @@ def extract_json(html):
 def check_stock(product):
     try:
         r = session.get(product["url"], timeout=5)
-        data = extract_json(r.text)
 
+        print(r.text[:500])
+        
+        data = extract_json(r.text)
+        
         if not data:
             return 0
 
@@ -87,7 +90,7 @@ while True:
             product["last_alert"] = now
 
         else:
-            print(r.text[:500])
+            
             print(f"{product['name']} OOS")
 
         product["last_stock"] = stock
