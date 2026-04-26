@@ -10,7 +10,7 @@ CHAT_ID = os.getenv("CHAT_ID")
 PRODUCTS = [
     {
         "name": "Ascended Heroes ETB",
-        "url": "https://www.lazada.sg/products/pdp-i3653880220-s24152360783.html",
+        "url": "https://www.lazada.sg/products/pdp-i13686883411-s124548114668.html",
         "last_stock": 0,
         "last_alert": 0
     }
