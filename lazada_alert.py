@@ -3,6 +3,7 @@ import json
 import re
 import time
 import os
+import random
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 CHAT_ID = os.getenv("CHAT_ID")
@@ -20,7 +21,10 @@ COOLDOWN = 30
 
 session = requests.Session()
 session.headers.update({
-    "User-Agent": "Mozilla/5.0"
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Accept": "text/html,application/xhtml+xml",
+    "Connection": "keep-alive"
 })
 
 def send_alert(msg):
@@ -97,4 +101,4 @@ while True:
 
         time.sleep(0.8)
 
-    time.sleep(0.5)
+    time.sleep(random.uniform(0.8, 1.5))
