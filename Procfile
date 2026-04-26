@@ -1,0 +1,1 @@
+worker: python lazada_alert.py
